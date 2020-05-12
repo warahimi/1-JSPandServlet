@@ -5,32 +5,14 @@
   <!-- Servlet Mapping/COnfiguration -->
   
 <servlet>
-	<servlet-name>firstServletUsingServletInterface</servlet-name>
-	<servlet-class>com._1ServletUingServletInterface.ServletUsingServletInterface</servlet-class>
+	<servlet-name>form</servlet-name>
+	<servlet-class>com._4SubmitFormToServletandFetchDataFromForm.SubmitFormAndFetchData</servlet-class>
 </servlet>
 
 <servlet-mapping>
-	<servlet-name>firstServletUsingServletInterface</servlet-name>
-	<url-pattern>/web</url-pattern>
+	<servlet-name>form</servlet-name>
+	<url-pattern>/RegisterServlet</url-pattern> <!-- give the form action as url-patter -->
 </servlet-mapping>
 
-<servlet>
-	<servlet-name>secondServletUsingGenericAbstractClass</servlet-name>
-	<servlet-class>com._2ServletUsingGenericServlet.ServletUsingGenericServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-	<servlet-name>secondServletUsingGenericAbstractClass</servlet-name>
-	<url-pattern>/web2</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>thirdUsingHttpServletClass</servlet-name>
-	<servlet-class>com._3ServletUsingHttpServletClass.ServletUsingHttpServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-	<servlet-name>thirdUsingHttpServletClass</servlet-name>
-	<url-pattern>/web3</url-pattern>
-</servlet-mapping>  
+ 
 </web-app>
