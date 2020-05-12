@@ -12,6 +12,7 @@ import javax.servlet.ServletResponse;
 //service mthod is abstract inside GenericServlet
 //now we have to override only one method that is service(), the other 4 is already overriddent
 //Shorter way
+//the main method we might need is service()// when browser send a reques it send either in the form of get or post
 public class ServletUsingGenericServlet extends GenericServlet {
 
 	@Override

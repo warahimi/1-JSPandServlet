@@ -23,5 +23,14 @@
 	<servlet-name>secondServletUsingGenericAbstractClass</servlet-name>
 	<url-pattern>/web2</url-pattern>
 </servlet-mapping>
-  
+
+<servlet>
+	<servlet-name>thirdUsingHttpServletClass</servlet-name>
+	<servlet-class>com._3ServletUsingHttpServletClass.ServletUsingHttpServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>thirdUsingHttpServletClass</servlet-name>
+	<url-pattern>/web3</url-pattern>
+</servlet-mapping>  
 </web-app>
