@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JSPandServlet-CodewithDurgesh</display-name>
+  
+  <!-- Servlet Mapping/COnfiguration -->
+  
+<servlet>
+	<servlet-name>firstServletUsingServletInterface</servlet-name>
+	<servlet-class>com._1ServletUingServletInterface.ServletUsingServletInterface</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>firstServletUsingServletInterface</servlet-name>
+	<url-pattern>/web</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>secondServletUsingGenericAbstractClass</servlet-name>
+	<servlet-class>com._2ServletUsingGenericServlet.ServletUsingGenericServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>secondServletUsingGenericAbstractClass</servlet-name>
+	<url-pattern>/web2</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>thirdUsingHttpServletClass</servlet-name>
+	<servlet-class>com._3ServletUsingHttpServletClass.ServletUsingHttpServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>thirdUsingHttpServletClass</servlet-name>
+	<url-pattern>/web3</url-pattern>
+</servlet-mapping>  
+</web-app>
