@@ -4,6 +4,7 @@ package com._4SubmitFormToServletandFetchDataFromForm;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +24,7 @@ public class SubmitFormAndFetchData extends HttpServlet{
 		//Fetching the data from form/request object
 		String name = req.getParameter("user_name");
 		String passwor = req.getParameter("user_password");
-		String email = req.getParameter("user_password");
+		String email = req.getParameter("user_email");
 		String gender = req.getParameter("user_gender");
 		String course = req.getParameter("user_course");
 		String condition = req.getParameter("condition");
@@ -40,6 +41,10 @@ public class SubmitFormAndFetchData extends HttpServlet{
 				out.println("<h2>Course: "+course+"</h2>");
 				
 				//or we could put the data coming from form to database using JDBC or ...
+				
+				//Say we saved the data to a database , and forward the request to other vervlet using RequestDispatcher
+				RequestDispatcher rd = req.getRequestDispatcher("success"); //forwards the request to this url
+				rd.forward(req, resp); // the success servlet will be run but not directly, it will be run by the help of RequestDispatcher forward method
 			}
 			else {
 				out.println("<h2> You have not accepted the Terms and Conditions</h2>");
@@ -48,6 +53,17 @@ public class SubmitFormAndFetchData extends HttpServlet{
 		else
 		{
 			out.println("<h2> You have not accepted the Terms and Conditions</h2>");
+			
+			//Uring RequesDispatcher
+			//we want to include the the output of index.html if the uder didnt check the terms and conditions
+			
+			
+			//Create RequestDispatcher object
+			RequestDispatcher rd = req.getRequestDispatcher("index.html"); // if we wanted to include other servlet`s output we pass the other servlet`s url here
+			
+			
+			//call the rd include method
+			rd.include(req, resp);
 		}
 
 
