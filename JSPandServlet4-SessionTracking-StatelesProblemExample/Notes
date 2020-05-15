@@ -1,0 +1,19 @@
+Session Tracking: is a way to maintain the state (Data) of a user in server / server remembers the user data
+it is also known as state management
+
+when a client sends a request to the server, HTTP protocol is uesed , Http is a stateless protocol.
+
+Stateless: server threats each reques as a new request
+Stateless: means when a user sends a request to the server server process it and send a dynamic response (sends the hompage/index.html)
+but, if the same user send the second reques the server threats it a a new reques and new user/  server cannot remember it
+is the previous user, and threats it as a new request. th is called stateless , and we gotta manage this statement 
+fe. if a user logins in his first request, then he shouldnt be asked to login again if he sends the second reques to access pages
+Suppos if u go to a course for registeration ..................
+
+We gotta manage the state with the help of Session Tracking Techniques 
+there are 4 Session Tracking Techniques
+1- Cookies
+2- Hidden Form Field
+3- URL Rewriting 
+4- HttpSession 
+
