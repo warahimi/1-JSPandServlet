@@ -1,7 +1,0 @@
-Create a servlet and do the mapping in web.xml (Deployement Descripter) to let the server know which Servlet to call with which url
-
-A Dynamic Web Project Structure:(configuration files)
-1 - Web Pages: we put all the static pages, html,css,js.. in this folder.
-2- Java Source: we creat all the servlets/java classes in this folder
-2 - liberary : if we want to use some jar files/ external libraries in our project
-
