@@ -1,0 +1,18 @@
+URL Rwriteing is a process of appending or modifying any url structure while loading a page.
+this concept is very important for web development 
+
+when accessing any page from a server (html,servlet or jsp page) we can pass some key value pair data with url as well
+www.onlyjavatech.com/abc.html?a=6&b=8
+www.onlyjavatech.com/abc.jsp?a=6&b=8
+www.onlyjavatech.com/abc?a=6&b=8                 //servlet url pattern
+
+for example if want to access (servlet1) from server and in its url we want to pass name and roll number for servlet1
+www.onlyjavatech.com/servlet1?name=Wahid&rollnumber=101
+we can put some extra data with url , this is called url rewriting,
+url rewritng is done in client(browser) and server (servlet) can access the values/data by help of keys and calling the getParameter() of reques object and pass the key
+
+this can be used for state management as well, when the client sends the 2nd request the same key value pairs goes
+with url to the server and serve can access and check wheather it is a new request or old request
+Servlet can put some data with url in the response form.
+
+we can pass string with space also not like cookies that suppor only one word
