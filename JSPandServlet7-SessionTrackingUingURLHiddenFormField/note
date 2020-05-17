@@ -1,0 +1,10 @@
+Hidden Form Field:
+
+is a hidden(invisible) textfield that is used for maintaining the state of a usr
+<input type="hidden" name="user_name" value="Wahidullah Rahimi" />
+it is simply a text file with type hidden that is not vissible to user, it is stored in browser and not seen by user , server can fetch it value using key/name
+it is same as url rewriting , servlet1 generate a hidden form filed and sends it with response to the client
+client can send the data to Servlet2, servlet2 can fetch the data from 2nd request of user
+
+
+We can put specific data in simultanouse request and response for server to fetch and remember the user for state management purpose
