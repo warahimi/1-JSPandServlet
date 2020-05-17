@@ -1,0 +1,39 @@
+Session Management usong HttpSession is the 4th techinique through which we can track/managae our session
+
+Session Simply means small interval of time used to state management (an object will be made for a while and we can put values in it)
+we can use the Session to make login system or put some user`s data on to server to remember
+
+We can make mutiple application inside a server, and inside an application we can make multiple servlets
+
+When the client send the 1st request server creates a session/object for the client (HttpSession object)
+the object will have an id through which we can track the session/ remember the client, the object id is sent to 
+client with response and when the same client sends the 2nd request server recognize it through the id
+
+the object will remain alive until:
+1-untill we have not closed the browser
+2-invalidate the object your self
+3-or when it time is not expired 
+
+when the object is died, all the information is in the object will be gone, and if the user sends another reques
+a new object will be created for that
+
+Used mostly for login sytems, when user logs in, we can put their id, name, email or .... in the object and untill he hasnt 
+loged out the session will be alive for him
+
+HttpSession intface which is javax.servlet.http
+it have some important method we can use
+
+1- setAttribute(key, value)  / to store some data in its object, key is String type, value is object type we can put any thing, List,Image, array...
+2- getAttribute(key) - to get value ,, returns object
+
+3- getId()//get Session id , to check its old or new
+4- removeAttribute(key)
+5- invalidate() // expires / kills the session 
+
+the object will maintain the data through out the session / our visit, it might be used by multiple servlet during our session
+
+the good thing about HttpSession is that we can pass multiple values and the values could be used in multiple Servlets throuhg out 
+our visit / session
+
+whenever we visit any website tomcat can create a session for us, and we can put our data in that session.
+
